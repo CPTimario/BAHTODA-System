@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{674F080F-B025-4ACE-8538-12C5C4EEAC49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BAHTODASystem.My.MyApplication</StartupObject>
+    <RootNamespace>BAHTODASystem</RootNamespace>
+    <AssemblyName>BAHTODA System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BAHTODA System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BAHTODA System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BAHTODA System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDriver.designer.vb">
+      <DependentUpon>AddDriver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDriver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewTransaction.Designer.vb">
+      <DependentUpon>AddNewTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.designer.vb">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAccounts.Designer.vb">
+      <DependentUpon>EditAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTricycleInfo.Designer.vb">
+      <DependentUpon>EditTricycleInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditTricycleInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAHTODADataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BAHTODADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAHTODADataSet.vb">
+      <DependentUpon>BAHTODADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AddTransaction.Designer.vb">
+      <DependentUpon>AddTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionReportForm.Designer.vb">
+      <DependentUpon>TransactionReportForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExcel.Designer.vb">
+      <DependentUpon>ImportExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputFee.Designer.vb">
+      <DependentUpon>InputFee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdminForm.designer.vb">
+      <DependentUpon>SuperAdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDriverInfo.Designer.vb">
+      <DependentUpon>EditDriverInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDriverInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ManageAccounts.Designer.vb">
+      <DependentUpon>ManageAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAddDrivers.Designer.vb">
+      <DependentUpon>ViewAddDrivers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAddDrivers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAddTricycles.Designer.vb">
+      <DependentUpon>ViewAddTricycles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAddTricycles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDriverTransactions.Designer.vb">
+      <DependentUpon>ViewDriverTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDriverTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTransaction.Designer.vb">
+      <DependentUpon>EditTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddDriver.resx">
+      <DependentUpon>AddDriver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewTransaction.resx">
+      <DependentUpon>AddNewTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAccounts.resx">
+      <DependentUpon>EditAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTricycleInfo.resx">
+      <DependentUpon>EditTricycleInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTransaction.resx">
+      <DependentUpon>AddTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptReport.rdlc" />
+    <EmbeddedResource Include="TransactionReportForm.resx">
+      <DependentUpon>TransactionReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExcel.resx">
+      <DependentUpon>ImportExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFee.resx">
+      <DependentUpon>InputFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionReport.rdlc" />
+    <EmbeddedResource Include="SuperAdminForm.resx">
+      <DependentUpon>SuperAdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDriverInfo.resx">
+      <DependentUpon>EditDriverInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccounts.resx">
+      <DependentUpon>ManageAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAddDrivers.resx">
+      <DependentUpon>ViewAddDrivers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAddTricycles.resx">
+      <DependentUpon>ViewAddTricycles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDriverTransactions.resx">
+      <DependentUpon>ViewDriverTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTransaction.resx">
+      <DependentUpon>EditTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BAHTODADataSet.xsc">
+      <DependentUpon>BAHTODADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BAHTODADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BAHTODADataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BAHTODADataSet.xss">
+      <DependentUpon>BAHTODADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
